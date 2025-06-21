@@ -1,0 +1,70 @@
+{
+    "version": 4,
+    "env": {
+        "linuxIncludePath": [
+            "${workspaceFolder}/include/",
+            "${workspaceFolder}/SFML/include/",
+            "/usr/include"
+        ],
+        "windowsIncludePath": [
+            "${workspaceFolder}\\include",
+            "${workspaceFolder}\\SFML\\include",
+            "C:\\Program Files\\mingw64\\include\\c++\\14.2.0",
+            "C:\\Program Files\\mingw64\\include"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "Linux-debug",
+            "includePath": [
+                "${linuxIncludePath}"
+            ],
+            "defines": [
+                "DEBUG=true"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "Linux-release",
+            "includePath": [
+                "${linuxIncludePath}"
+            ],
+            "defines": [
+                "DEBUG=false"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "Windows-debug",
+            "includePath": [
+                "${windowsIncludePath}"
+            ],
+            "defines": [
+                "DEBUG=true"
+            ],
+            "compilerPath": "C:\\Program Files\\mingw64\\bin\\g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        },
+        {
+            "name": "Windows-release",
+            "includePath": [
+                "${windowsIncludePath}"
+            ],
+            "defines": [
+                "DEBUG=false"
+            ],
+            "compilerPath": "C:\\Program Files\\mingw64\\bin\\g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ]
+}
